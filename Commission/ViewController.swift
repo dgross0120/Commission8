@@ -13,9 +13,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    var dingle = 23
-        
-        var dingus = 46
         
         
     }
