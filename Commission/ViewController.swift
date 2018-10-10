@@ -8,18 +8,34 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController
+{
+    
 
     @IBOutlet weak var totalPayLabel: UILabel!
     @IBOutlet weak var commissionPayTextField: UITextField!
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
+    
+        
         super.viewDidLoad()
         
         
         
     }
 
-    @IBAction func calculateOnTapped(_ sender: UIButton) {
+    @IBAction func calculateOnTapped(_ sender: UIButton)
+    {
+    
+    }
+    
+    func getInput(){
+        if let data = commissionPayTextField.text, let commissionPay = Int(data){
+            print("Everything is fine")
+        } else {
+            print("Error occured")
+        }
+        
     }
     
 }
